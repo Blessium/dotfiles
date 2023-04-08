@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use { "RRethy/nvim-base16" }
   use { "ellisonleao/gruvbox.nvim" }
   use {'nvim-treesitter/nvim-treesitter', { run =  ':TSUpdate'}}
   use {"ThePrimeagen/harpoon"}

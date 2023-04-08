@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/blessium/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-base16"] = {
+    loaded = true,
+    path = "/home/blessium/.local/share/nvim/site/pack/packer/start/nvim-base16",
+    url = "https://github.com/RRethy/nvim-base16"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/blessium/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
