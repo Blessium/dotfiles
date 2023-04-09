@@ -37,6 +37,12 @@ lsp.tsserver.setup(coq.lsp_ensure_capabilities{
     flags = lsp_flags,
 })
 
+lsp.gopls.setup({})
+lsp.gopls.setup(coq.lsp_ensure_capabilities{
+    on_attach = on_attach,
+    flags = lsp_flags
+})
+
 rust_tools.setup({})
 rust_tools.setup(coq.lsp_ensure_capabilities{
     on_attach = on_attach,
