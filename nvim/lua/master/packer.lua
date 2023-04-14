@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
 
   use { "RRethy/nvim-base16" }
   use { "ellisonleao/gruvbox.nvim" }
+  use { "catppuccin/nvim", as = "catppuccin" }
   use {'nvim-treesitter/nvim-treesitter', { run =  ':TSUpdate'}}
   use {"ThePrimeagen/harpoon"}
   use {'ms-jpq/chadtree', branch= 'chad', run = 'python3 -m chadtree deps'}
