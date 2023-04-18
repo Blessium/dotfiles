@@ -1,3 +1,23 @@
 add_newline = false
+
+format = '$username$hostname$all'
+
 [character]
-success_symbol = '[➜](bold green)'
+success_symbol = " [λ](green)"
+error_symbol = " [λ](bold red)"
+
+[username]
+style_user = 'white bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+disabled = false
+
+[directory]
+truncation_length = 1
+style = " yellow"
+format = "at [$path]($style)[$read_only]($read_only_style) "
