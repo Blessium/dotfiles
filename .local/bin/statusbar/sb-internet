@@ -18,7 +18,8 @@ case $BLOCK_BUTTON in
 esac
 
 if grep -xq 'up' /sys/class/net/w*/operstate 2>/dev/null ; then
-	wifiicon="$(awk '/^\s*w/ { print "📶", int($3 * 100 / 70) "% " }' /proc/net/wireless)"
+    connection_name=$(nmcli -t -f NAME c show --active | head -n 1)
+	wifiicon="📶 $connection_name"
 elif grep -xq 'down' /sys/class/net/w*/operstate 2>/dev/null ; then
 	grep -xq '0x1003' /sys/class/net/w*/flags && wifiicon="📡 " || wifiicon="❌ "
 fi
