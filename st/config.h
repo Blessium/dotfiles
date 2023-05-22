@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font Mono:style=Retina,Regular:pixelsize=21:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font Mono:style=Retina,Regular:pixelsize=21:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=21:antialias=true:autohint=true" };
 static int borderpx = 4;
 
