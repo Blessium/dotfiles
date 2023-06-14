@@ -55,4 +55,10 @@ rust_tools.setup(coq.lsp_ensure_capabilities{
     flags = lsp_flags,
 })
 
+lsp.clangd.setup({})
+lsp.clangd.setup(coq.lsp_ensure_capabilities{
+    on_attach = on_attach,
+    flags = lsp_flags
+})
+
 vim.cmd('COQnow --shut-up')
